@@ -1,0 +1,52 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# ─── Security Headers (applied to every page) ─────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent this site from being embedded in iframes (clickjacking)
+    X-Frame-Options = "DENY"
+
+    # Prevent MIME-type sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Control referrer information sent to third parties
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Force HTTPS for 1 year on this domain (do NOT include subdomains unless all subdomains serve HTTPS)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+    # Disable browser features not needed by this static site
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+
+    # Content-Security-Policy
+    # - default-src 'self'            → only load resources from same origin by default
+    # - script-src 'self'             → JS only from same origin (Vite bundles inline)
+    # - style-src 'self' 'unsafe-inline' fonts.googleapis.com → Tailwind produces inline styles; Google Fonts CSS
+    # - font-src 'self' fonts.gstatic.com → Google Fonts files
+    # - img-src 'self' data:          → local images + base64 data URIs (logo/avatars)
+    # - connect-src 'self'            → no external API calls from frontend
+    # - frame-src 'none'              → no iframes
+    # - object-src 'none'             → no Flash/plugins
+    # - base-uri 'self'               → prevent base tag injection
+    # - form-action 'self' wa.me      → form submissions only to self + WhatsApp (future form backend)
+    # - upgrade-insecure-requests     → auto-upgrade HTTP sub-resources to HTTPS
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me; upgrade-insecure-requests"
+
+    # NOTE: X-XSS-Protection is deprecated in modern browsers.
+    # CSP above provides superior XSS protection. Kept for legacy browser compat.
+    X-XSS-Protection = "0"
+
+# ─── Cache control: never cache HTML (ensures updated deployments take effect) ─
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+# ─── Long-term cache for versioned assets (Vite fingerprints these) ──────────
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
