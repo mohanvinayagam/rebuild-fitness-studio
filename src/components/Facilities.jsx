@@ -10,12 +10,12 @@ const stagger = {
 };
 
 const facilities = [
-  { title: 'Strength Zone', image: '/images/gym-01.jpg', alt: 'Strength training zone at Rebuild Fitness Studio' },
-  { title: 'Cardio Area', image: '/images/gym-02.jpg', alt: 'Cardio area at Rebuild Fitness Studio' },
-  { title: 'Training Floor', image: '/images/training-01.jpg', alt: 'Training floor at Rebuild Fitness Studio Chromepet' },
-  { title: 'Functional Area', image: '/images/about.jpg', alt: 'Functional training area at Rebuild Fitness Studio' },
-  { title: 'Group Training', image: '/images/gallery-01.jpg', alt: 'Group training space at Rebuild Fitness Studio' },
-  { title: 'Recovery Space', image: '/images/gallery-02.jpg', alt: 'Recovery space at Rebuild Fitness Studio Chennai' },
+  { title: 'Strength Zone', image: '/images/training.webp', alt: 'Strength training zone at Rebuild Fitness Studio' },
+  { title: 'Cardio Area', image: '/images/cardio.webp', alt: 'Cardio area at Rebuild Fitness Studio' },
+  { title: 'Training Floor', image: '/images/training.webp', alt: 'Training floor at Rebuild Fitness Studio Chromepet' },
+  { title: 'Functional Area', image: '/images/functional.webp', alt: 'Functional training area at Rebuild Fitness Studio' },
+  { title: 'Group Training', image: '/images/hero-bg.webp', alt: 'Group training space at Rebuild Fitness Studio' },
+  { title: 'Recovery Space', image: '/images/recovery.webp', alt: 'Recovery space at Rebuild Fitness Studio Chennai' },
 ];
 
 export default function Facilities() {

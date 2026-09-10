@@ -32,7 +32,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute -left-3 top-4 bottom-4 w-1 bg-brand-red" />
               <img
-                src="/images/about.jpg"
+                src="/images/functional.webp"
                 alt="Cardio equipment at Rebuild Fitness Studio Chromepet"
                 className="w-full h-[400px] lg:h-[550px] object-cover"
                 loading="lazy"

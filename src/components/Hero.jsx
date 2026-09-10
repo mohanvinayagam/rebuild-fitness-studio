@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero.jpg')" }}
+        style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
         role="img"
         aria-label="Rebuild Fitness Studio gym interior"
       />

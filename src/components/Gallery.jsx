@@ -10,12 +10,12 @@ const stagger = {
 };
 
 const galleryImages = [
-  { src: '/images/gym-01.jpg', alt: 'Rebuild Fitness Studio training floor with modern equipment', category: 'Gym' },
-  { src: '/images/gym-02.jpg', alt: 'Cardio and training area at Rebuild Fitness Studio', category: 'Equipment' },
-  { src: '/images/training-01.jpg', alt: 'Training area at Rebuild Fitness Studio Chromepet', category: 'Training' },
-  { src: '/images/gallery-01.jpg', alt: 'Strength training zone at Rebuild Fitness Studio', category: 'Gym' },
-  { src: '/images/gallery-02.jpg', alt: 'Fitness equipment at Rebuild Fitness Studio Chennai', category: 'Equipment' },
-  { src: '/images/about.jpg', alt: 'Modern gym interior at Rebuild Fitness Studio', category: 'Gym' },
+  { src: '/images/hero-bg.webp', alt: 'Rebuild Fitness Studio training floor with modern equipment', category: 'Gym' },
+  { src: '/images/cardio.webp', alt: 'Cardio and training area at Rebuild Fitness Studio', category: 'Equipment' },
+  { src: '/images/training.webp', alt: 'Training area at Rebuild Fitness Studio Chromepet', category: 'Training' },
+  { src: '/images/functional.webp', alt: 'Strength training zone at Rebuild Fitness Studio', category: 'Gym' },
+  { src: '/images/recovery.webp', alt: 'Fitness equipment at Rebuild Fitness Studio Chennai', category: 'Equipment' },
+  { src: '/images/training.webp', alt: 'Modern gym interior at Rebuild Fitness Studio', category: 'Gym' },
 ];
 
 export default function Gallery() {

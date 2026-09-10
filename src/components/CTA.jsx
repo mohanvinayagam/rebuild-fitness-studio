@@ -19,7 +19,7 @@ export default function CTA() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/cta-bg.jpg')" }}
+        style={{ backgroundImage: "url('/images/training.webp')" }}
       />
       <div className="absolute inset-0 bg-black/75" />
 
