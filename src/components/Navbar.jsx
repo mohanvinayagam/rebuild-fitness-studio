@@ -20,7 +20,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 gap-2">
           {/* Logo */}
           <a href="#home" className="flex-shrink-0">
             <img
@@ -31,12 +31,12 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-white/70 hover:text-brand-red text-sm font-medium uppercase tracking-wider transition-colors duration-200"
+                className="text-white/70 hover:text-brand-red text-xs xl:text-sm font-medium uppercase tracking-wide xl:tracking-wider transition-colors duration-200 whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -44,12 +44,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex flex-shrink-0 ml-4">
             <a
               href={gymData.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-red text-white px-6 py-2.5 font-heading uppercase tracking-wider text-sm hover:bg-brand-red-light transition-colors duration-200"
+              className="bg-brand-red text-white px-5 py-2.5 font-heading uppercase tracking-wider text-sm hover:bg-brand-red-light transition-colors duration-200 whitespace-nowrap"
             >
               Join Now
             </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: '100vh' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="lg:hidden fixed inset-0 top-20 bg-brand-dark/98 backdrop-blur-lg z-40"
+            className="lg:hidden fixed inset-0 top-16 bg-brand-dark/98 backdrop-blur-lg z-40"
           >
             <div className="flex flex-col items-center justify-center h-full gap-8 -mt-20">
               {navLinks.map((link, i) => (
