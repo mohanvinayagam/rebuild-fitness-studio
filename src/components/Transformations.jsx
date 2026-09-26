@@ -17,6 +17,9 @@ const transformations = [
   { id: 3, src: '/images/transformations/transform-03.webp', alt: 'Rebuild Fitness Studio client transformation' },
   { id: 4, src: '/images/transformations/transform-04.webp', alt: 'Rebuild Fitness Studio client transformation' },
   { id: 5, src: '/images/transformations/transform-05.webp', alt: 'Rebuild Fitness Studio client transformation' },
+  { id: 6, src: '/images/transformations/transform-06.webp', alt: 'Rebuild Fitness Studio client transformation' },
+  { id: 7, src: '/images/transformations/transform-07.webp', alt: 'Rebuild Fitness Studio client transformation' },
+  { id: 8, src: '/images/transformations/transform-08.webp', alt: 'Rebuild Fitness Studio client transformation' },
 ];
 
 export default function Transformations() {
