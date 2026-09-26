@@ -10,7 +10,7 @@ const stagger = {
 };
 
 const facilities = [
-  { title: 'Strength Zone', image: '/images/training.webp', alt: 'Strength training zone at Rebuild Fitness Studio' },
+  { title: 'Strength Zone', image: '/images/strength-zone.webp', alt: 'Strength zone with power cage and weights at Rebuild Fitness Studio' },
   { title: 'Cardio Area', image: '/images/cardio.webp', alt: 'Cardio area at Rebuild Fitness Studio' },
   { title: 'Training Floor', image: '/images/training.webp', alt: 'Training floor at Rebuild Fitness Studio Chromepet' },
   { title: 'Functional Area', image: '/images/functional.webp', alt: 'Functional training area at Rebuild Fitness Studio' },
