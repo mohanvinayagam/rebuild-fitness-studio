@@ -8,6 +8,7 @@ import Facilities from './components/Facilities';
 import Gallery from './components/Gallery';
 import Trainers from './components/Trainers';
 import Testimonials from './components/Testimonials';
+import Transformations from './components/Transformations';
 import OpeningHours from './components/OpeningHours';
 import CTA from './components/CTA';
 import Location from './components/Location';
@@ -31,6 +32,7 @@ export default function App() {
         <Gallery />
         <Trainers />
         <Testimonials />
+        <Transformations />
         <OpeningHours />
         <CTA />
         <Location />

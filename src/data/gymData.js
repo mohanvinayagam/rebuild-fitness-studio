@@ -30,6 +30,7 @@ export const navLinks = [
   { label: 'Facilities', href: '#facilities' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Trainers', href: '#trainers' },
+  { label: 'Transformations', href: '#transformations' },
   { label: 'BMI', href: '#bmi' },
   { label: 'Enquiry', href: '#enquiry' },
   { label: 'Contact', href: '#contact' },
