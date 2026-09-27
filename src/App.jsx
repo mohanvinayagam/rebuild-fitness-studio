@@ -6,7 +6,6 @@ import Memberships from './components/Memberships';
 import WhyRebuild from './components/WhyRebuild';
 import Facilities from './components/Facilities';
 import Gallery from './components/Gallery';
-import Trainers from './components/Trainers';
 import Testimonials from './components/Testimonials';
 import Transformations from './components/Transformations';
 import OpeningHours from './components/OpeningHours';
@@ -30,7 +29,6 @@ export default function App() {
         <WhyRebuild />
         <Facilities />
         <Gallery />
-        <Trainers />
         <Testimonials />
         <Transformations />
         <OpeningHours />
