@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rebuildfitstudio.com/sitemap.xml
+Sitemap: https://rebuildfitness.in/sitemap.xml
