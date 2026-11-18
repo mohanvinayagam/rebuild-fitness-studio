@@ -1,4 +1,4 @@
-import { Dumbbell, UserCheck, Users, Activity, TrendingUp, Baby, Flame, Zap } from 'lucide-react';
+import { Dumbbell, UserCheck, Users, Activity, TrendingUp, Baby, Flame, Zap, Globe } from 'lucide-react';
 
 export const programs = [
   {
@@ -56,5 +56,23 @@ export const programs = [
     title: 'Sports Athletes',
     description: 'Sport-specific training designed to improve athletic performance, agility, speed, strength, endurance, and injury prevention.',
     Icon: Zap,
+  },
+  {
+    id: 9,
+    number: '09',
+    title: 'Online Personal Training',
+    description: "Can't visit our gym? No problem! Rebuild Fitness Studio brings personalized fitness coaching directly to you. Train from home or anywhere with expert guidance and a structured approach designed around your fitness goals.",
+    Icon: Globe,
+    isOnline: true,
+    badge: 'Train From Anywhere',
+    features: [
+      'Personalized workout plans',
+      'One-to-one online training guidance',
+      'Exercise demonstrations and form correction',
+      'Weight-loss and muscle-building guidance',
+      'Regular progress tracking and follow-ups',
+      'Flexible training from anywhere',
+    ],
+    whatsappMessage: "Hi Rebuild Fitness Studio! I'm interested in your Online Personal Training program. Please share the details about the training sessions and how to get started.",
   },
 ];
