@@ -189,18 +189,11 @@ export default function Transformations() {
                 alt={lightbox.alt}
                 className="max-w-full max-h-[75vh] object-contain rounded-sm"
               />
-              {(lightbox.heading || lightbox.caption) && (
+              {lightbox.heading && (
                 <div className="mt-4 text-center max-w-xl px-4">
-                  {lightbox.heading && (
-                    <h3 className="font-heading text-lg md:text-xl uppercase tracking-wider text-white mb-1">
-                      {lightbox.heading}
-                    </h3>
-                  )}
-                  {lightbox.caption && (
-                    <p className="text-brand-muted text-xs md:text-sm leading-relaxed">
-                      {lightbox.caption}
-                    </p>
-                  )}
+                  <h3 className="font-heading text-lg md:text-xl uppercase tracking-wider text-white">
+                    {lightbox.heading}
+                  </h3>
                 </div>
               )}
             </motion.div>
