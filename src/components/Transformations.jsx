@@ -32,6 +32,14 @@ const transformations = [
 export default function Transformations() {
   const [lightbox, setLightbox] = useState(null);
 
+  const openLightbox = useCallback((item) => {
+    setLightbox({
+      src: item.src,
+      alt: item.alt,
+      heading: item.heading || null,
+    });
+  }, []);
+
   const closeLightbox = useCallback(() => setLightbox(null), []);
 
   useEffect(() => {
@@ -99,14 +107,14 @@ export default function Transformations() {
                 key={item.id}
                 variants={fadeUp}
                 className="relative overflow-hidden rounded-sm cursor-pointer group bg-brand-charcoal border border-white/5 hover:border-brand-red/30 transition-colors duration-300"
-                onClick={() => setLightbox(item)}
+                onClick={() => openLightbox(item)}
                 role="button"
                 tabIndex={0}
                 aria-label={item.heading ? `${item.heading} - ${item.alt}` : `View transformation ${item.id}`}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    setLightbox(item);
+                    openLightbox(item);
                   }
                 }}
               >
