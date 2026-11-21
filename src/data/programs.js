@@ -1,4 +1,4 @@
-import { Dumbbell, UserCheck, Users, Activity, TrendingUp, Baby, Flame, Zap, Globe } from 'lucide-react';
+import { Dumbbell, UserCheck, Users, Activity, TrendingUp, Baby, Flame, Zap, Globe, Swords, Flower2, Timer } from 'lucide-react';
 
 export const programs = [
   {
@@ -39,8 +39,8 @@ export const programs = [
   {
     id: 6,
     number: '06',
-    title: 'Kids Training',
-    description: 'A safe, engaging, and age-appropriate program designed to help children develop fitness, coordination, confidence, and healthy habits.',
+    title: 'Kids – Sports, Strength & Conditioning',
+    description: 'Build stronger, faster and more confident young athletes through age-appropriate sports training, strength development, coordination, agility, balance and conditioning exercises. Our program focuses on improving overall athletic performance, physical fitness and discipline in a safe, fun and supportive environment.',
     Icon: Baby,
   },
   {
@@ -60,6 +60,27 @@ export const programs = [
   {
     id: 9,
     number: '09',
+    title: 'Karate & Silambam',
+    description: 'Develop strength, discipline, confidence and self-defence skills through traditional martial arts training. Our Karate and Silambam sessions focus on combat techniques, flexibility, coordination, speed, agility, concentration and physical conditioning under proper guidance.',
+    Icon: Swords,
+  },
+  {
+    id: 10,
+    number: '10',
+    title: 'Yoga',
+    description: 'Improve your physical and mental well-being through guided yoga sessions. Focus on flexibility, balance, posture, breathing techniques, mobility, stress management and overall body relaxation. Suitable for individuals looking to build a healthier and more balanced lifestyle.',
+    Icon: Flower2,
+  },
+  {
+    id: 11,
+    number: '11',
+    title: 'CrossFit Training',
+    description: 'Enhance your overall fitness through high-intensity functional workouts combining strength training, endurance, cardio, weightlifting and bodyweight exercises. Improve stamina, power, agility and athletic performance through structured workouts designed for different fitness levels.',
+    Icon: Timer,
+  },
+  {
+    id: 12,
+    number: '12',
     title: 'Online Personal Training',
     description: "Can't visit our gym? No problem! Rebuild Fitness Studio brings personalized fitness coaching directly to you. Train from home or anywhere with expert guidance and a structured approach designed around your fitness goals.",
     Icon: Globe,

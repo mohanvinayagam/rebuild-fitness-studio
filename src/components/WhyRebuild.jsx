@@ -32,7 +32,7 @@ export default function WhyRebuild() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
-          className="font-heading text-4xl md:text-5xl lg:text-6xl uppercase text-center mb-16"
+          className="font-heading text-3xl md:text-4xl lg:text-5xl uppercase text-center mb-16"
         >
           Why <span className="text-brand-red">Rebuild</span>?
         </motion.h2>

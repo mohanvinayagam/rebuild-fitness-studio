@@ -50,13 +50,13 @@ export default function Hero() {
 
         {/* Main Heading */}
         <motion.h1 variants={item} className="font-display leading-[0.9] mb-8">
-          <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
+          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white">
             REBUILD
           </span>
-          <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
+          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white">
             YOUR
           </span>
-          <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-brand-red">
+          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-brand-red">
             STRONGER SELF.
           </span>
         </motion.h1>

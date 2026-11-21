@@ -1,12 +1,12 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Testimonials from './components/Testimonials';
 import Programs from './components/Programs';
 import Memberships from './components/Memberships';
 import WhyRebuild from './components/WhyRebuild';
 import Facilities from './components/Facilities';
 import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
 import Transformations from './components/Transformations';
 import OpeningHours from './components/OpeningHours';
 import CTA from './components/CTA';
@@ -24,12 +24,12 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Testimonials />
         <Programs />
         <Memberships />
         <WhyRebuild />
         <Facilities />
         <Gallery />
-        <Testimonials />
         <Transformations />
         <OpeningHours />
         <CTA />

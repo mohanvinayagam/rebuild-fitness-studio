@@ -139,7 +139,7 @@ export default function BMICalculator() {
           </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-heading text-4xl md:text-5xl lg:text-6xl uppercase"
+            className="font-heading text-3xl md:text-4xl lg:text-5xl uppercase"
           >
             BMI <span className="text-brand-red">Calculator</span>.
           </motion.h2>

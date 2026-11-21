@@ -38,7 +38,7 @@ export default function Memberships() {
           </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="font-heading text-4xl md:text-5xl lg:text-6xl uppercase leading-tight"
+            className="font-heading text-3xl md:text-4xl lg:text-5xl uppercase leading-tight"
           >
             Choose Your
             <br />

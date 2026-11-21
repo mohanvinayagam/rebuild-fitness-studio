@@ -35,7 +35,7 @@ export default function Contact() {
           </motion.h2>
           <motion.p
             variants={fadeUp}
-            className="font-display text-5xl md:text-6xl mb-12"
+            className="font-display text-4xl md:text-5xl mb-10"
           >
             <span className="text-brand-red">Rebuild</span> Fitness Studio
           </motion.p>

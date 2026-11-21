@@ -33,7 +33,7 @@ export default function CTA() {
       >
         <motion.h2
           variants={fadeUp}
-          className="font-heading text-4xl md:text-5xl lg:text-7xl uppercase leading-tight mb-6"
+          className="font-heading text-3xl md:text-4xl lg:text-5xl uppercase leading-tight mb-6"
         >
           Ready to
           <br />
